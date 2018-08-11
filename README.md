@@ -167,3 +167,48 @@ takeOrder('mushroom', 'thin crust');
 takeOrder('spinach', 'whole wheat');
 takeOrder('pepperoni', 'brooklyn style');
 console.log(getSubTotal(orderCount));
+
+
+
+
+There are many more array methods than just .push() and .pop(). 
+
+Some methods that JavaScript developers use frequently are 
+.join(), 
+.slice(), 
+.splice(), 
+.shift(), 
+.unshift(), and 
+.concat() amongst many others.
+
+
+
+
+
+Review Arrays
+Nice work! In this lesson, we learned these concepts regarding arrays:
+
+Arrays are lists and are a way to store data in JavaScript.
+Arrays are created with brackets [].
+Each item inside of an array is at a numbered position, starting at 0.
+We can access one item in an array using its numbered position, with syntax like: myArray[0].
+We can also change an item in an array using its numbered position, with syntax like myArray[0] = "new string";
+Arrays have a length property, which allows you to see how many items are in an array.
+Arrays have their own methods, including .push() and .pop(), which add and remove items from an array, respectively.
+Arrays have many other methods that perform different functions, such as .slice() and .shift(). You can read the documentation for any array method on the Mozilla Developer Network website.
+Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable; they can be changed. However, a variable declared with const cannot be reassigned.
+
+
+
+
+
+for loops allow us to repeat a block of code a known amount of times.
+We can use a for loop inside another for loop to compare two lists.
+while loops are for looping over a code block an unknown amount of times.
+Infinite loops occur when stop conditions are never met.
+
+
+
+
+
+
