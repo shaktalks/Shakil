@@ -115,3 +115,21 @@ One equals symbol (=) is used to assign a value to a variable.
 Three equals symbols (===) are used to check if two variables are equal to each other.
 
 
+
+
+const starCount = () => {
+  let i = 5;
+  console.log(i);
+  for (i=0; i< 12; i++){
+    console.log(i);
+  }
+};
+
+starCount();
+console.log(i);
+
+
+
+Scope is the idea in programming that some variables are accessible/inaccessible from other parts of the program.
+Global Scope refers to variables that are accessible to every part of the program.
+Block Scope refers to variables that are accessible only within the block they are defined.
