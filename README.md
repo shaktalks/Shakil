@@ -133,3 +133,37 @@ console.log(i);
 Scope is the idea in programming that some variables are accessible/inaccessible from other parts of the program.
 Global Scope refers to variables that are accessible to every part of the program.
 Block Scope refers to variables that are accessible only within the block they are defined.
+
+
+
+
+
+
+
+
+Introduction to Functions
+A function is a block of code designed to perform a task.
+
+Functions are like recipes.
+They accept data, perform actions on that data, and return a result. 
+
+The beauty of functions is that they allow us to write a block of code once, then we can reuse it over and over without rewriting the same code.
+
+
+
+
+let orderCount = 0;
+
+const takeOrder = (topping, crustType) => {
+  orderCount++;
+  console.log('Order: ' + crustType + ' pizza topped with ' + topping);
+};
+
+const getSubTotal = (itemCount) => {
+  return itemCount * 7.5;
+};
+
+takeOrder('mushroom', 'thin crust');
+takeOrder('spinach', 'whole wheat');
+takeOrder('pepperoni', 'brooklyn style');
+console.log(getSubTotal(orderCount));
