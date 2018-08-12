@@ -200,6 +200,19 @@ Variables that contain arrays can be declared with let or const. Even when decla
 
 
 
+##to compare 2 lists
+let myPlaces = ['Houston', 'Sioux Falls', 'Phoenix'];
+
+let friendPlaces = ['Sioux Falls', 'Missoula', 'Buffalo'];
+
+for (let myPlacesIndex = 0; myPlacesIndex < myPlaces.length; myPlacesIndex++) {
+  for (let friendPlacesIndex = 1; friendPlacesIndex < friendPlaces.length; friendPlacesIndex++) {
+		if (myPlaces[myPlacesIndex] === friendPlaces[friendPlacesIndex]) {
+      console.log(friendPlaces[friendPlacesIndex]);
+    }
+  }
+}
+
 
 
 for loops allow us to repeat a block of code a known amount of times.
@@ -208,7 +221,55 @@ while loops are for looping over a code block an unknown amount of times.
 Infinite loops occur when stop conditions are never met.
 
 
+Methods:
+forEach(); //for each element in the list of the array--- also returns *undefined*
+map();     // map will do something to each element in the array and give you a new array
+filter();  // filters out the return statement into a new array
+some();    // only some based on the return statement-- returns boolean *myexperience*
+every();   // based on the return statement -- returns boolean *myexperience*
+reduce();  //
 
 
 
 
+reiterate :x
+.forEach() is used to execute the same code on every element in an array but does not change the array and returns undefined.
+.map() executes the same code on every element in an array and returns a new array with the updated elements.
+.filter() checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.
+
+
+
+#JavaScrupt OBJECTS
+
+let person = {
+  name: 'Shakil',
+  age: 31
+};
+
+Keys point to values which can hold any kind of data type, like strings, numbers, booleans, arrays, and even functions (we will get to that later).
+
+property === A key-value pair in an object is also called a property. 
+
+you can use DOT notation or Bracket notation to access the value of the key
+ex.
+
+dot notation
+console.log(person.name);
+
+bracket notation
+console.log(person['name'];
+
+
+#Best practice for methods in javascript objects
+
+openRestaurant() {
+    return 'Unlock the door, flip the open sign. We are open for business!';
+  },
+  closeRestaurant() {
+    return 'Lock the door, flip the open sign. We are closed.'
+  }
+  
+  In the example above we change the syntax for the .openRestaurant() and .closeRestaurant() methods. T
+  his syntax, which only requires the name of the method and parentheses, is best practice for defining methods.
+  
+  
